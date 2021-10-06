@@ -1,0 +1,2 @@
+It was just introduction to Linux and shell commands.
+How to install Virtual Box and use LinuX on it also showcasing of its functionalities.

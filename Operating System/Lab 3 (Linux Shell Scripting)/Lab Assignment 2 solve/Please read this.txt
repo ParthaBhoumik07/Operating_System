@@ -1,0 +1,11 @@
+All of these codes were saved in my ubuntu Desktop as .sh file.
+So in order to execute them.I had to go through the following steps -
+cd Desktop
+
+then modifying the execute permission if I dont have that, using - 
+chmod 777 file_name [gives executing permission to all]
+
+then executed the file using -
+./file_nmae 
+
+-thanks for reading.

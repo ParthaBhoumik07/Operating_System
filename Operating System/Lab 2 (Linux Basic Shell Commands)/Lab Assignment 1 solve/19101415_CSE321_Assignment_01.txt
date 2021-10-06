@@ -1,0 +1,38 @@
+Task - 1 
+Create a file excalibur.txt in Desktop -
+=> cd Desktop
+=> cat > excalibur.txt
+=> I am Excalibur [file content]
+=> ctrl+z
+
+Change the permission of the file to owner: read, write and execute, group: read and execute and for other users execute only. -
+=> chmod 751 excalibur.txt
+
+Create a directory named mydirectory -
+=> mkdir mydirectory
+
+Copy the file excalibur.txt to mydirectory -
+=> cp excalibur.txt mydirectory
+
+Delete the file excalibur.txt from desktop -
+=> rm excalibur.txt
+
+Task - 2
+Delete all the files and folders from a directory -
+=> rm -rfv {*,.*}
+
+Task - 3
+Find all the .txt files in a folder - 
+=> find . -type f -name "*.txt"
+
+Task - 4
+Check for a given string in multiple files (N.B. Choose a random string of your choice) -
+=> grep "Partha" ,/ * [Partha is a random string]
+
+Task - 5
+Show only lines 12-18 of a .txt file - 
+=> sed -n '12,18p' bat.txt  [bat.txt is the .txt file name from which I was showing line 12-18]
+
+Task - 6
+Show all the files in a directory - 
+=> ls -p | grep -v /

@@ -1,0 +1,55 @@
+#!bin/bash
+
+addition () {
+    echo "Operand 1:"
+  read op_1
+  echo "Operand_2:"
+  read op_2
+  echo "The result is $(( $op_1 + $op_2 ))"
+}
+
+substraction () {
+    echo "Operand 1:"
+  read op_1
+  echo "Operand_2:"
+  read op_2
+  echo "The result is $(( $op_1 - $op_2 ))"
+}
+
+division () {
+    echo "Operand 1:"
+  read op_1
+  echo "Operand_2:"
+  read op_2
+  echo "The result is $(( $op_1 / $op_2 ))"
+}
+
+multiplication () {
+    echo "Operand 1:"
+  read op_1
+  echo "Operand_2:"
+  read op_2
+  echo "The result is $(( $op_1 * $op_2 ))"
+}
+
+echo "Which operation would you like to do?"
+read a
+b="${a}a" #I was facing some issues with "*" sign so used this trick
+
+if [ $b = "+a" ];
+  then 
+   addition
+elif [ $b = "-a" ];
+  then 
+   substraction 
+elif [ $b = "/a" ];
+  then 
+   division
+elif [ $b = "*a" ];
+  then 
+   multiplication    
+else 
+  echo "ERROR I can calculate only + - * /"    
+fi 
+
+
